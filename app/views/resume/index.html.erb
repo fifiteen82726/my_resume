@@ -1,3 +1,13 @@
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".progress").each(function(){
+		var progress = $(this).data("percent");
+		$(this).children("div").animate({"width": progress + "%"}, 2000);
+	});
+});
+</script>
+
+
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -87,66 +97,90 @@
 
 
 		</div>
-	
 
-	
+
+
 		<br>
 		<h3 style="color: #66cc99">Skill</h3>
 		
 		<div  class = "company_text catogory" >
-				Web
+			Web
 		</div>
 
 		<ul>
-			<li class="skill-percentage-web skill-name">Ruby On Rails</li>
+			<li class="skill-name">Ruby On Rails</li>
+			<div class="progress" data-percent="80">
+    			<div></div>
+			</div>
+			<li class="skill-name" >HTML / CSS  / SASS</li>
+			<div class="progress" data-percent="70">
+    			<div></div>
+			</div>
+			<li class="skill-name" >Javascript / Jquery</li>
+			<div class="progress" data-percent="60">
+    			<div></div>
+			</div>
+		</ul>
 
-			<li class="skill-percentage-web skill-name" >HTML / CSS  / SCSS</li>
+		<div  class = "company_text catogory" >
+			Programming Language
+		</div>
+
+		<ul>
+			<li class="skill-name">Python</li>
+			<div class="progress" data-percent="80">
+    			<div></div>
+			</div>
+			<li class="skill-name" >Ruby</li>
+			<div class="progress" data-percent="60">
+    			<div></div>
+			</div>
+			<li class="skill-name" >C/C++/C#/PHP</li>
+			<div class="progress" data-percent="60">
+    			<div></div>
+			</div>
+		</ul>
 		
-
-			<li class="skill-percentage-web skill-name" >Javascript / Jquery</li>
-
-		</ul>
-
 		<div  class = "company_text catogory" >
-				Programming Language
-		</div>
-
-		<ul>
-			<li class="skill-percentage-program skill-name">Python</li>
-			<li class="skill-percentage-program skill-name" >Ruby</li>
-			<li class="skill-percentage-program skill-name" >C/C++/C#/PHP</li>
-		</ul>
-		
-		<div  class = "company_text catogory" >
-				Database
+			Database
 		</div>
 		<ul>
-			<li class="skill-percentage-database skill-name" >MYSQL / PostgreSQL  / MSSQL / Redis </li>
+			<li class="skill-name" >MYSQL / PostgreSQL  / MSSQL / Redis 
+			</li>
+
+			<div class="progress" data-percent="55">
+    			<div></div>
+			</div>
+
 		</ul>
 
 		<div  class = "company_text catogory" >
-				Cloud Service
+			Cloud Service
 		</div>
 		<ul>
-			<li class="skill-percentage-cloud skill-name" >
-			Heroku / Google Compute Engine  </li>
+			<li class="skill-name" >
+				Heroku / Google Compute Engine  
+			</li>
+			<div class="progress" data-percent="50">
+    			<div></div>
+			</div>
 		</ul>
-		
-		<div  class = "company_text catogory" >
+
+
+			<div  class = "company_text catogory" >
 				Others
+			</div>
+			<ul>
+				<li class="skill-name" >
+					Git / Spark /Hadoop
+				</li>
+				<div class="progress" data-percent="45">
+    			<div></div>
+			</div>
+			</ul>
+
+
+			</div>
 		</div>
-		<ul>
-			<li class="skill-percentage-other skill-name" >
-			Git / Spark /Hadoop </li>
-		</ul>
 
-	
 
-	
-	<!-- Skill -->
-
-</div>
-	</div>
-
-	<!-- SKill -->
-	
