@@ -27,24 +27,35 @@ $(document).ready(function() {
 			</div>
 		</div>
 
-		<div class="col-md-3 basic_info">
-			電話
-			Email
+		<div class="col-sm-12 basic_info">
+			<p> 
+			<%= image_tag("phone.png",  size: "40x40", :class => "img-circle") %>
+			<i class ="basic_answer">0989630020</i>
+			</p>	
+		
+			<p> 
+			<%= image_tag("email.png",  size: "40x40", :class => "img-circle") %>
+			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=fifiteen82726@gmail.com" class ="basic_answer">fifiteen82726@gmail.com </a>	
+			</p>
+
+			<!-- <p> 
+			<%#= image_tag("logdown.png",  size: "45x45", :class => "img-circle") %>
+			<a href="http://fifiteen82726-blog.logdown.com/" class ="basic_answer">Blog </a>
+			</p>	 -->
 		</div>
 
-		<div class="col-md-9 basic_answer">
-			0989630020
-			fifiteen82726@gmail.com
-		</div>
+		
 
 		<div class="col-md-12">
-			社交
+			
+			
+			<%= link_to(image_tag("github.png",  size: "40x40", :class => "img-circle social-icon"), "https://github.com/fifiteen82726") %>
+
+			<%= link_to(image_tag("linkedin.png",  size: "40x40", :class => "img-circle social-icon"), "https://tw.linkedin.com/in/codachang") %>
+
+		
 		</div>
 
-		<div class="col-md-12">
-			<%#= image_tag ("svg/social-1_logo-500px.svg") %>
-			<%#= image_tag ("svg/social-1_logo-facebook.svg") %>
-		</div>
 
 	</div>
 
@@ -110,15 +121,15 @@ $(document).ready(function() {
 		<ul>
 			<li class="skill-name">Ruby On Rails</li>
 			<div class="progress" data-percent="80">
-    			<div></div>
+				<div></div>
 			</div>
 			<li class="skill-name" >HTML / CSS  / SASS</li>
 			<div class="progress" data-percent="70">
-    			<div></div>
+				<div></div>
 			</div>
 			<li class="skill-name" >Javascript / Jquery</li>
 			<div class="progress" data-percent="60">
-    			<div></div>
+				<div></div>
 			</div>
 		</ul>
 
@@ -129,15 +140,15 @@ $(document).ready(function() {
 		<ul>
 			<li class="skill-name">Python</li>
 			<div class="progress" data-percent="80">
-    			<div></div>
+				<div></div>
 			</div>
 			<li class="skill-name" >Ruby</li>
 			<div class="progress" data-percent="60">
-    			<div></div>
+				<div></div>
 			</div>
 			<li class="skill-name" >C/C++/C#/PHP</li>
 			<div class="progress" data-percent="60">
-    			<div></div>
+				<div></div>
 			</div>
 		</ul>
 		
@@ -149,7 +160,7 @@ $(document).ready(function() {
 			</li>
 
 			<div class="progress" data-percent="55">
-    			<div></div>
+				<div></div>
 			</div>
 
 		</ul>
@@ -162,25 +173,25 @@ $(document).ready(function() {
 				Heroku / Google Compute Engine  
 			</li>
 			<div class="progress" data-percent="50">
-    			<div></div>
+				<div></div>
 			</div>
 		</ul>
 
 
-			<div  class = "company_text catogory" >
-				Others
-			</div>
-			<ul>
-				<li class="skill-name" >
-					Git / Spark /Hadoop
-				</li>
-				<div class="progress" data-percent="45">
-    			<div></div>
-			</div>
-			</ul>
-
-
-			</div>
+		<div  class = "company_text catogory" >
+			Others
 		</div>
+		<ul>
+			<li class="skill-name" >
+				Git / Spark /Hadoop
+			</li>
+			<div class="progress" data-percent="45">
+				<div></div>
+			</div>
+		</ul>
+
+
+	</div>
+</div>
 
 

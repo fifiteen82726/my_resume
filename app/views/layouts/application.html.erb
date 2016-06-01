@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyResume</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<title>MyResume</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="container">
-		
-	
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<!-- <a class="navbar-brand" href=""> -->
+					<%= link_to "關於我", root_path, :class => "navbar-brand" %> 
+					<!-- <img alt="Brand" src="..."> -->
 
-<%= yield %>
-</div>
+					<%= link_to "作品", work_index_path, :class => "navbar-brand" %> 
+					
+
+				
+				</div>
+			</div>
+		</nav>
+
+
+
+		<%= yield %>
+	</div>
 </body>
 </html>
