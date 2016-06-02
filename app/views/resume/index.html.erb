@@ -27,34 +27,28 @@ $(document).ready(function() {
 			</div>
 		</div>
 
-		<div class="col-sm-12 basic_info">
-			<p> 
+		<div class="col-md-12 basic_info" >
+			<div class="row" style="margin-bottom:10px;">
 			<%= image_tag("phone.png",  size: "40x40", :class => "img-circle") %>
 			<i class ="basic_answer">0989630020</i>
-			</p>	
+			</div>	
 		
-			<p> 
+			<div class="row" style="margin-bottom:10px;">
 			<%= image_tag("email.png",  size: "40x40", :class => "img-circle") %>
 			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=fifiteen82726@gmail.com" class ="basic_answer">fifiteen82726@gmail.com </a>	
-			</p>
+			</div>
+	
 
-			<!-- <p> 
-			<%#= image_tag("logdown.png",  size: "45x45", :class => "img-circle") %>
-			<a href="http://fifiteen82726-blog.logdown.com/" class ="basic_answer">Blog </a>
-			</p>	 -->
+			<div class="row" style="margin-bottom:10px;">
+			<%= link_to(image_tag("github.png",  size: "40x40", :class => "social-icon"), "https://github.com/fifiteen82726") %>
+
+			<%= link_to(image_tag("linkedin.png",  size: "40x40", :class => "social-icon"), "https://tw.linkedin.com/in/codachang") %>
+			</div>
+			
 		</div>
 
 		
 
-		<div class="col-md-12">
-			
-			
-			<%= link_to(image_tag("github.png",  size: "40x40", :class => "img-circle social-icon"), "https://github.com/fifiteen82726") %>
-
-			<%= link_to(image_tag("linkedin.png",  size: "40x40", :class => "img-circle social-icon"), "https://tw.linkedin.com/in/codachang") %>
-
-		
-		</div>
 
 		<div class="col-md-12">
 			<h2>About me</h2>
