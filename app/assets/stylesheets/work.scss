@@ -36,8 +36,8 @@ p {
 	/*text-align: center;*/
 	hyphens: auto
 }
-h1 {
-	text-align: center;
+h1,p {
+	/*text-align: center;*/
 	font-weight: 300;
 	margin: 35px;
 	user-select: none;
@@ -81,7 +81,8 @@ h1 {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: stretch;
-	align-content: stretch
+	align-content: stretch;
+	margin-bottom: 30px;
 }
 .flex-item {
 	flex: 1 0 auto
@@ -101,23 +102,33 @@ h1 {
 	background-size: cover
 }
 .thumbnail-grid figure.i3 {
-	/*background: url(https://anselmurban.de/codepen-img/goerlitzmade.png) no-repeat center;*/
+	background: url(image_path('omniauth.png')) no-repeat center;
+	
+	
 	background-size: cover
 }
 
+.thumbnail-grid figure.i4 {
+	background: url(image_path('save-energy.png')) no-repeat center;
+	background-size: cover
+}
+
+.thumbnail-grid figure.i5 {
+	background: url(image_path('keelung.png')) no-repeat center;
+	background-size: cover
+}
+
+.thumbnail-grid figure.i5 {
+	background: url(image_path('reading.png')) no-repeat center;
+	background-size: cover
+}
+
+.work-grid{
+	margin-bottom: 80px;
+}
+
+
+
 
 /* Thumbnails for HiDPI/retina screens */
-@media print,
-	(-o-min-device-pixel-ratio: 5/4),
-	(-webkit-min-device-pixel-ratio: 1.25),
-	(min-resolution: 120dpi) {
-	.thumbnail-grid figure.i1 {
-		background-image: url(https://anselmurban.de/codepen-img/sinfonietta-meridiana%402x.png)
-	}
-	.thumbnail-grid figure.i2 {
-		background-image: url(https://anselmurban.de/codepen-img/pension%402x.png)
-	}
-	.thumbnail-grid figure.i3 {
-		background-image: url(https://anselmurban.de/codepen-img/goerlitzmade%402x.png)
-	}
-}
+
