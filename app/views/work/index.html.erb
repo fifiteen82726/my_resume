@@ -1,13 +1,14 @@
-<% content_for :header do -%>
-  <%= stylesheet_link_tag 'work' %>
-<% end -%>
+<%# content_for :header do -%>
+  <%#= stylesheet_link_tag 'work' %>
+<%# end -%>
 
 <h1>Flexbox Grid with Pure CSS Hover Effects</h1>
 
-<div class="thumbnail-grid flex">
-  <a href="https://sinfonietta-meridiana.de/" target="_blank" class="flex-item">
+<div class="thumbnail-grid flex" style="background: <%= image_url('logdown-square') %>">
+
+  <a href="http://fifiteen82726-blog.logdown.com/" target="_blank" class="flex-item">
     <figure class="i1">
-      <figcaption>Project #1</figcaption>
+      <figcaption>平常在寫的部落格</figcaption>
     </figure>
   </a>
   <a href="https://pension-am-alten-waschhaus.de/en/" target="_blank" class="flex-item">
