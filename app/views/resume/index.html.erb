@@ -37,11 +37,20 @@ $(document).ready(function() {
 <br>
 <div class="col-md-12">
 	<div class="col-md-4" id= "left-block">
-
-		<div class="col-md-8">
+		
+		<div class="hidden-xs">
+		<div class="col-md-8 ">
 			<%= image_tag("profile.JPG",  size: "150x200", :class => "img-circle") %>
 
 		</div>
+		</div>
+
+		<div class="row col-md-12 visible-xs">
+			<center>
+					<%= image_tag("profile.JPG",  size: "150x200", :class => "img-circle") %>
+			</center>
+		</div>
+
 		<div class="row"  style= "margin-bottom: 30px;">
 			<div class="col-md-4">
 				<br>
