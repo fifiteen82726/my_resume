@@ -1,9 +1,31 @@
 <script type="text/javascript">
-$(document).ready(function() {
-	$(".progress").each(function(){
+
+$(function() {
+	$('#skill-block').scrollex({
+		enter: function() {
+
+      // Set #foobar's background color to green when we scroll into it.
+      $(".progress").each(function(){
 		var progress = $(this).data("percent");
 		$(this).children("div").animate({"width": progress + "%"}, 2000);
 	});
+
+  },
+  leave: function() {
+
+      // Reset #foobar's background color when we scroll out of it.
+       $(".progress").each(function(){
+		var progress = $(this).data("percent");
+		$(this).children("div").animate({"width": 0 + "%"}, 0);
+	});
+  }
+
+});
+});
+
+
+$(document).ready(function() {
+	
 });
 </script>
 
@@ -29,20 +51,20 @@ $(document).ready(function() {
 
 		<div class="col-md-12 basic_info" >
 			<div class="row" style="margin-bottom:10px;">
-			<%= image_tag("phone.png",  size: "40x40", :class => "img-circle") %>
-			<i class ="basic_answer">0989630020</i>
+				<%= image_tag("phone.png",  size: "40x40", :class => "img-circle") %>
+				<i class ="basic_answer">0989630020</i>
 			</div>	
-		
+
 			<div class="row" style="margin-bottom:10px;">
-			<%= image_tag("email.png",  size: "40x40", :class => "img-circle") %>
-			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=fifiteen82726@gmail.com" class ="basic_answer">fifiteen82726@gmail.com </a>	
+				<%= image_tag("email.png",  size: "40x40", :class => "img-circle") %>
+				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=fifiteen82726@gmail.com" class ="basic_answer">fifiteen82726@gmail.com </a>	
 			</div>
-	
+
 
 			<div class="row" style="margin-bottom:10px;">
-			<%= link_to(image_tag("github.png",  size: "40x40", :class => "social-icon"), "https://github.com/fifiteen82726") %>
+				<%= link_to(image_tag("github.png",  size: "40x40", :class => "social-icon"), "https://github.com/fifiteen82726") %>
 
-			<%= link_to(image_tag("linkedin.png",  size: "40x40", :class => "social-icon"), "https://tw.linkedin.com/in/codachang") %>
+				<%= link_to(image_tag("linkedin.png",  size: "40x40", :class => "social-icon"), "https://tw.linkedin.com/in/codachang") %>
 			</div>
 			
 		</div>
@@ -53,22 +75,22 @@ $(document).ready(function() {
 		<div class="col-md-12">
 			<h2>About me</h2>
 			
-				<p class = "basic_answer">
+			<p class = "basic_answer">
 				<span class ="bold "style="color: black">My background</span>
 				
-				 lies in applied computer science. I am especially strong in website developmen. I have created and maintained widely-used website for a while (using Ruby on Rails, ASP.NET). 
-				</p>
-				
-				<p class = "basic_answer">
-				<span class ="bold "style="color: black">My current goal</span>
-				 is to be a full stack developer and a data scientist, so I am learning the knowledge about Spark, Hadoop, Python and machine learning.
-			     </p>
+				lies in applied computer science. I am especially strong in website developmen. I have created and maintained widely-used website for a while (using Ruby on Rails, ASP.NET). 
+			</p>
 
-			     
-				<p class = "basic_answer">
+			<p class = "basic_answer">
+				<span class ="bold "style="color: black">My current goal</span>
+				is to be a full stack developer and a data scientist, so I am learning the knowledge about Spark, Hadoop, Python and machine learning.
+			</p>
+
+
+			<p class = "basic_answer">
 				<span class ="bold "style="color: black">Practically,</span>
-				 now, most of my time spend on solving LeetCode problems, implementing Rails futures, Python crawler and practicing Spark mllib.
-			     </p>
+				now, most of my time spend on solving LeetCode problems, implementing Rails futures, Python crawler and practicing Spark mllib.
+			</p>
 
 		</div>
 
@@ -128,83 +150,87 @@ $(document).ready(function() {
 
 
 		<br>
-		<h3 style="color: #66cc99">Skill</h3>
-		
-		<div  class = "company_text catogory" >
-			Web
-		</div>
 
-		<ul>
-			<li class="skill-name">Ruby On Rails</li>
-			<div class="progress" data-percent="80">
-				<div></div>
-			</div>
-			<li class="skill-name" >HTML / CSS  / SASS</li>
-			<div class="progress" data-percent="70">
-				<div></div>
-			</div>
-			<li class="skill-name" >Javascript / Jquery</li>
-			<div class="progress" data-percent="60">
-				<div></div>
-			</div>
-		</ul>
+		<div id= "skill-block"> 
+			<h3 style="color: #66cc99">Skill</h3>
 
-		<div  class = "company_text catogory" >
-			Programming Language
-		</div>
-
-		<ul>
-			<li class="skill-name">Python</li>
-			<div class="progress" data-percent="80">
-				<div></div>
-			</div>
-			<li class="skill-name" >Ruby</li>
-			<div class="progress" data-percent="60">
-				<div></div>
-			</div>
-			<li class="skill-name" >C/C++/C#/PHP</li>
-			<div class="progress" data-percent="60">
-				<div></div>
-			</div>
-		</ul>
-		
-		<div  class = "company_text catogory" >
-			Database
-		</div>
-		<ul>
-			<li class="skill-name" >MYSQL / PostgreSQL  / MSSQL / Redis 
-			</li>
-
-			<div class="progress" data-percent="55">
-				<div></div>
+			<div  class = "company_text catogory" >
+				Web
 			</div>
 
-		</ul>
+			<ul>
+				<li class="skill-name">Ruby On Rails</li>
+				<div class="progress" data-percent="80">
+					<div></div>
+				</div>
+				<li class="skill-name" >HTML / CSS  / SASS</li>
+				<div class="progress" data-percent="70">
+					<div></div>
+				</div>
+				<li class="skill-name" >Javascript / Jquery</li>
+				<div class="progress" data-percent="60">
+					<div></div>
+				</div>
+			</ul>
 
-		<div  class = "company_text catogory" >
-			Cloud Service
-		</div>
-		<ul>
-			<li class="skill-name" >
-				Heroku / Google Compute Engine  
-			</li>
-			<div class="progress" data-percent="50">
-				<div></div>
+			<div  class = "company_text catogory" >
+				Programming Language
 			</div>
-		</ul>
 
+			<ul>
+				<li class="skill-name">Python</li>
+				<div class="progress" data-percent="80">
+					<div></div>
+				</div>
+				<li class="skill-name" >Ruby</li>
+				<div class="progress" data-percent="60">
+					<div></div>
+				</div>
+				<li class="skill-name" >C/C++/C#/PHP</li>
+				<div class="progress" data-percent="60">
+					<div></div>
+				</div>
+			</ul>
 
-		<div  class = "company_text catogory" >
-			Others
-		</div>
-		<ul>
-			<li class="skill-name" >
-				Git / Spark / Hadoop
-			</li>
-			<div class="progress" data-percent="45">
-				<div></div>
+			<div  class = "company_text catogory" >
+				Database
 			</div>
-		</ul>
+			<ul>
+				<li class="skill-name" >MYSQL / PostgreSQL  / MSSQL / Redis 
+				</li>
+
+				<div class="progress" data-percent="55">
+					<div></div>
+				</div>
+
+			</ul>
+
+			<div  class = "company_text catogory" >
+				Cloud Service
+			</div>
+			<ul>
+				<li class="skill-name" >
+					Heroku / Google Compute Engine  
+				</li>
+				<div class="progress" data-percent="50">
+					<div></div>
+				</div>
+			</ul>
+
+
+			<div  class = "company_text catogory" >
+				Others
+			</div>
+			<ul>
+				<li class="skill-name" >
+					Git / Spark / Hadoop
+				</li>
+				<div class="progress" data-percent="45">
+					<div></div>
+				</div>
+			</ul>
+
+		</div>  <!--end of skill block -->
 
 
 	</div>
